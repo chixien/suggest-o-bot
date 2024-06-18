@@ -1,0 +1,7 @@
+## Interface: 100207
+## Version: 0.0.1
+## Title: Suggest-O-Bot
+## Notes: Suggesting game content helper
+## Author: Chixien
+
+SuggestOBot.lua
