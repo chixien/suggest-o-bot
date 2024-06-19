@@ -4,4 +4,4 @@
 ## Notes: Suggesting game content helper
 ## Author: Chixien
 
-SuggestOBot.lua
+Core/Load.xml

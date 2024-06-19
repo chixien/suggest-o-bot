@@ -16,6 +16,7 @@ function SuggestOBotFrame_CreateFrame()
     if not SuggestOBotFrame then
         -- Create the frame
         local frame = CreateFrame("Frame", "SuggestOBotFrame", UIParent, "BackdropTemplate")
+        local playerName = UnitName("player") or "Unknown Player"  
         frame:SetSize(300, 200)  -- Set the size of the frame (width, height)
         frame:SetPoint("CENTER") -- Position the frame in the center of the screen
 
@@ -39,7 +40,7 @@ function SuggestOBotFrame_CreateFrame()
         -- Create a FontString for the text
         local text = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
         text:SetPoint("CENTER", frame, "CENTER", 0, 0)    -- Position the text in the center of the frame
-        text:SetText("Hello, welcome to Suggest-O-Bot!")  -- Set the text to display
+        text:SetText(string.format("Hello, welcome to Suggest-O-Bot, %s!", playerName))  -- Set the text to display
 
         -- Save the frame to the global variable
         SuggestOBotFrame = frame
